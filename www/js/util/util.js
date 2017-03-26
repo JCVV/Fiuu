@@ -1,5 +1,5 @@
 define('util/util', [], function() {
-    return {
+    var util = {
         getPhoneGapPath: function() {
             var path = window.location.pathname;
             path = path.substr(path, path.length - 10);
@@ -10,4 +10,5 @@ define('util/util', [], function() {
             return path;
         }
     };
+    return util;
 });
